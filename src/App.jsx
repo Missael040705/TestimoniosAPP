@@ -1,25 +1,18 @@
-import React, { useState } from 'react';
-import testimonios from './data/data';
-import './components/styles.css';
-
-// Nota: Testimonial y Controls se crearán en las tareas siguientes
-// Por ahora, usamos un marcador de posición para validar la estructura.
+import React, { useState } from "react";
+import testimonios from "./data/data";
+import "./components/styles.css";
+import Testimonial from "./components/Testimonial"; // Nuevo componente
 
 function App() {
-  const [index, setIndex] = useState(6);
-  const { nombre, cargo, texto, foto } = testimonios[index];
+  const [index, setIndex] = useState(7);
 
   return (
     <main>
       <section className="card">
         <h2>Sección de Testimonios</h2>
-        {/* Aquí irá <Testimonial item={testimonios[index]} /> */}
-        <div className="img-container">
-          <img src={foto} alt={nombre} />
-        </div>
-        <h3>{nombre}</h3>
-        <p style={{color: 'gray'}}>{cargo}</p>
-        <p>"{texto}"</p>
+
+        {/* Usamos el componente Testimonial pasando el objeto actual por props */}
+        {<Testimonial item={testimonios[index]} />}
 
         {/* Aquí irá <Controls /> */}
         <div className="controls">
