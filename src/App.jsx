@@ -6,7 +6,7 @@ import './components/styles.css';
 // Por ahora, usamos un marcador de posición para validar la estructura.
 
 function App() {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(6);
   const { nombre, cargo, texto, foto } = testimonios[index];
 
   return (
