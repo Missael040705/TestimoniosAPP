@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Testimonial = ({ item }) => {
   // Desestructuración de las propiedades del testimonio
