@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+### IDE's template
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/

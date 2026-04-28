@@ -1,5 +1,3 @@
-import React from "react";
-
 const Controls = ({ onPrev, onNext, onRandom }) => {
   return (
     <div className="controls">

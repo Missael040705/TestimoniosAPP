@@ -1,16 +1,27 @@
-# React + Vite
+# Testimonios App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+App de testimonios en React + Vite con navegación, modo aleatorio y autoplay.
 
-Currently, two official plugins are available:
+## Características
+- Navegación circular entre testimonios (anterior/siguiente).
+- Selección aleatoria sin repetir el testimonio actual.
+- Autoplay cada 5 segundos con limpieza del intervalo.
+- Diseño centrado y responsivo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Requisitos
+- Node.js 18+ (recomendado)
 
-## React Compiler
+## Uso
+```powershell
+npm install
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Estructura
+- `src/data/data.js`: datos de testimonios.
+- `src/components/Testimonial.jsx`: componente de presentación.
+- `src/components/Controls.jsx`: controles de navegación.
+- `src/App.jsx`: lógica de estado y autoplay.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Notas
+Si agregas o quitas testimonios, la navegación se ajusta automáticamente al nuevo tamaño del arreglo.
